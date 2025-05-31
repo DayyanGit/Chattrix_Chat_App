@@ -1,0 +1,99 @@
+.login {
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    background-color: rgba(17, 25, 40, 0.6); /* optional for better contrast */
+    box-sizing: border-box;
+  }
+  
+  .login .item {
+    flex: 1;
+    max-width: 400px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .login .item form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  .login .item form input {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(17, 25, 40, 0.6);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .login .item form label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .login .item form img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .login .item form .btn {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #1a73e8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .login .item form .btn:hover {
+    background-color: #125fbe;
+  }
+  
+  .login .item form .btn:disabled {
+    background-color: #1a73e8a4;
+    cursor: not-allowed;
+  }
+  
+  .separator {
+    width: 2px;
+    height: 60%;
+    background-color: #dddddd35;
+  }
+  
+@media (max-width: 768px){
+  .separator{
+    display: none;
+  }
+
+  .login{
+
+    overflow: scroll;
+  }
+}
